@@ -1,0 +1,16 @@
+This is a simple script to download the latest 64 Bit Flash player (codenamed
+"Square") from Adobe Labs [1] and install it locally in ~/.mozilla/plugins.
+It was inspired [2] by the Flash-Aid Plugin [3] which works similarly but is
+more complex (and less ecure since it pulls from plain HTTP).
+
+To run this script, you can execute
+
+    wget -O- https://github.com/mss/getflashplugin64/raw/master/getflashplugin64.sh | /bin/bash
+
+Since the preview release of Flash Square is rerely updated, I recommend to
+use it together with Flashblock [3].
+
+[1] http://labs.adobe.com/technologies/flashplayer10/square/
+[2] http://askubuntu.com/questions/51298/some-flash-moving-portions-displayed-incorrectly-in-firefox-5
+[3] http://www.webgapps.org/add-ons/flash-aid
+[4] https://addons.mozilla.org/en-US/firefox/addon/flashblock/
