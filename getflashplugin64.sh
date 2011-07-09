@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2011 Malte S. Stretz <http://msquadrat.de>
+# Inspired by Flash-Aid <http://www.webgapps.org/add-ons/flash-aid>
 
 set -e
 
