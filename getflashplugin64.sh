@@ -8,10 +8,10 @@ mkdir -p ~/.mozilla/plugins
 cd ~/.mozilla/plugins
 
 url="http://labs.adobe.com/downloads/flashplayer10_square.html"
-url=$(wget -O- $url | sed -e '/_64bit_linux_/!d;s,^.*"http:\(//download.macromedia.com/[^"]*\)".*$,https:\1,')
+url=$(wget -O- "$url" | sed -e '/_64bit_linux_/!d;s,^.*"http:\(//download.macromedia.com/[^"]*\)".*$,https:\1,')
 test "$url"
 
-file=$(basename $url)
+file=$(basename "$url")
 rm -f "$file"
 trap "rm -f '$file'" EXIT
 
